@@ -1,0 +1,232 @@
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+
+    height:75px;
+
+    background:#ffffff;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 30px;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+/* Left */
+
+.page-title h2{
+
+    color:#111827;
+
+    font-size:28px;
+
+    margin-bottom:3px;
+
+}
+
+.page-title p{
+
+    color:#6b7280;
+
+    font-size:14px;
+
+}
+
+/* Right */
+
+.navbar-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+
+/* Icon Button */
+
+.icon-btn{
+
+    width:46px;
+
+    height:46px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#f3f4f6;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    position:relative;
+
+    font-size:18px;
+
+}
+
+.icon-btn:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+    transform:translateY(-2px);
+
+}
+
+/* Notification */
+
+.notification-dot{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#ef4444;
+
+    position:absolute;
+
+    top:10px;
+
+    right:10px;
+
+}
+
+/* Profile */
+
+.profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    cursor:pointer;
+
+    padding:8px 12px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.profile:hover{
+
+    background:#f3f4f6;
+
+}
+
+.avatar{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:bold;
+
+    font-size:18px;
+
+}
+
+.profile-info h4{
+
+    color:#111827;
+
+}
+
+.profile-info span{
+
+    color:#6b7280;
+
+    font-size:13px;
+
+}
+
+.down-icon{
+
+    color:#6b7280;
+
+}
+
+/* Mobile */
+
+@media(max-width:992px){
+
+
+
+}
+
+@media(max-width:768px){
+
+.navbar{
+
+padding:0 15px;
+
+}
+
+.profile-info{
+
+display:none;
+
+}
+
+.down-icon{
+
+display:none;
+
+}
+
+.page-title p{
+
+display:none;
+
+}
+
+.page-title h2{
+
+font-size:22px;
+
+}
+
+}

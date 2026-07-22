@@ -1,0 +1,192 @@
+.dashboard-layout{
+    display:flex;
+}
+
+.dashboard-content{
+    margin-left:260px;
+    width:100%;
+    background:#f5f7fb;
+    min-height:100vh;
+}
+
+.dashboard-body{
+    padding:30px;
+}
+
+.dashboard-body h2{
+    color:#111827;
+}
+
+.dashboard-body p{
+    color:#6b7280;
+    margin-top:8px;
+    margin-bottom:30px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:#6b7280;
+    margin-bottom:15px;
+}
+
+.card h1{
+    color:#2563eb;
+    font-size:35px;
+}
+
+@media(max-width:768px){
+
+.dashboard-content{
+    margin-left:220px;
+}
+
+.dashboard-body{
+    padding:20px;
+}
+
+.cards{
+    grid-template-columns:1fr;
+}
+
+}
+
+/* ==========================
+   Card Icons
+========================== */
+
+.card-icon{
+    width:60px;
+    height:60px;
+    border-radius:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:24px;
+    margin-bottom:18px;
+}
+
+.blue{
+    background:#2563eb;
+}
+
+.orange{
+    background:#f59e0b;
+}
+
+.green{
+    background:#22c55e;
+}
+
+.red{
+    background:#ef4444;
+}
+
+.card span{
+    display:block;
+    margin-top:12px;
+    color:#9ca3af;
+    font-size:14px;
+}
+
+/* ==========================
+   Dashboard Grid
+========================== */
+
+.dashboard-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+/* ==========================
+   Dashboard Box
+========================== */
+
+.dashboard-box{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.dashboard-box h3{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:20px;
+    color:#111827;
+}
+
+/* ==========================
+   Buttons
+========================== */
+
+.dashboard-box button{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:14px;
+    margin-bottom:12px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.dashboard-box button:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+/* ==========================
+   Activities
+========================== */
+
+.dashboard-box ul{
+    list-style:none;
+}
+
+.dashboard-box li{
+    padding:14px 0;
+    border-bottom:1px solid #eee;
+    font-size:15px;
+}
+
+.dashboard-box li:last-child{
+    border-bottom:none;
+}
+
+/* ==========================
+   Mobile
+========================== */
+
+@media(max-width:768px){
+
+.dashboard-grid{
+    grid-template-columns:1fr;
+}
+
+}

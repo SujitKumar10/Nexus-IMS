@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.learn.nexus_ims.repositories.UserRepository"/>
+    <fullyQualifiedTypeName name="com.learn.nexus_ims.entities.User"/>
+    <fullyQualifiedTypeName name="com.learn.nexus_ims.security.jwt.AuthEntryPointJwt"/>
+    <fullyQualifiedTypeName name="com.learn.nexus_ims.security.jwt.AuthTokenFilter"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,355 @@
+/* ==========================
+   RESET
+========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f5f7fb;
+}
+
+/* ==========================
+   MAIN CONTAINER
+========================== */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+}
+
+/* ==========================
+   LEFT SIDE
+========================== */
+.login-left {
+  flex: 1;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-left h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.login-left > p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 55px;
+}
+
+.feature-card {
+  background: rgba(255,255,255,0.15);
+  padding: 25px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.22);
+}
+
+.feature-card h3 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* ==========================
+   RIGHT SIDE
+========================== */
+.login-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8fafc;
+  padding: 20px;
+}
+
+/* ==========================
+   LOGIN CARD
+========================== */
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.login-card h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.login-card p {
+  text-align: center;
+  color: gray;
+  margin-bottom: 25px;
+}
+
+/* ==========================
+   FORM
+========================== */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+}
+
+input:focus {
+  border-color: #2563eb;
+}
+
+/* ==========================
+   OPTIONS
+========================== */
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.login-options a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.login-options a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================
+   BUTTON
+========================== */
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+/* ==========================
+   REGISTER
+========================== */
+.register-text {
+  text-align: center;
+  margin-top: 20px;
+  color: #555;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+/* Tablet */
+@media (max-width: 992px) {
+
+  .login-left {
+    padding: 40px;
+  }
+
+  .login-left h1 {
+    font-size: 35px;
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .login-container {
+    flex-direction: column;
+  }
+
+  .login-left {
+    display: none;
+  }
+
+  .login-right {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .login-card {
+    max-width: 100%;
+    padding: 30px 20px;
+  }
+
+  .login-options {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  .login-card {
+    padding: 25px 15px;
+  }
+
+  .login-card h2 {
+    font-size: 24px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+
+}
+
+/* ==========================
+   PASSWORD INPUT
+========================== */
+
+.password-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.password-box input {
+  width: 100%;
+  padding: 12px;
+  padding-right: 45px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 15px;
+}
+
+.password-box input:focus {
+  border-color: #2563eb;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #666;
+  font-size: 18px;
+}
+
+.eye-icon:hover {
+  color: #2563eb;
+}
+/* ===== Register Page ===== */
+
+.register-container {
+  min-height: 100vh;
+  display: flex;
+}
+
+.register-left {
+  flex: 1;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register-left h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.register-left > p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 55px;
+}
+
+.register-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8fafc;
+  padding: 20px;
+}
+
+.register-card {
+    width: 100%;
+    max-width: 450px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.register-card h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.register-card p {
+  text-align: center;
+  color: gray;
+  margin-bottom: 25px;
+}
+
+.register-card select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
